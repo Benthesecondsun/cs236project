@@ -122,13 +122,111 @@ CMakeFiles/cs236project.dir/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Token.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.cpp -o CMakeFiles/cs236project.dir/Token.cpp.s
 
+CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommaAutomaton.cpp
+
+CMakeFiles/cs236project.dir/CommaAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/CommaAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommaAutomaton.cpp > CMakeFiles/cs236project.dir/CommaAutomaton.cpp.i
+
+CMakeFiles/cs236project.dir/CommaAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/CommaAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommaAutomaton.cpp -o CMakeFiles/cs236project.dir/CommaAutomaton.cpp.s
+
+CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o: ../PeriodAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/PeriodAutomaton.cpp
+
+CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/PeriodAutomaton.cpp > CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.i
+
+CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/PeriodAutomaton.cpp -o CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.s
+
+CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o: ../Q_MarkAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Q_MarkAutomaton.cpp
+
+CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Q_MarkAutomaton.cpp > CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.i
+
+CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Q_MarkAutomaton.cpp -o CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.s
+
+CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o: ../Left_ParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Left_ParenAutomaton.cpp
+
+CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Left_ParenAutomaton.cpp > CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.i
+
+CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Left_ParenAutomaton.cpp -o CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.s
+
+CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Right_ParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.cpp
+
+CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.cpp > CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.i
+
+CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.cpp -o CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.s
+
+CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.cpp
+
+CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.cpp > CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.i
+
+CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.cpp -o CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.s
+
+CMakeFiles/cs236project.dir/AddAutomaton.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/AddAutomaton.cpp.o: ../AddAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cs236project.dir/AddAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/AddAutomaton.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/AddAutomaton.cpp
+
+CMakeFiles/cs236project.dir/AddAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/AddAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/AddAutomaton.cpp > CMakeFiles/cs236project.dir/AddAutomaton.cpp.i
+
+CMakeFiles/cs236project.dir/AddAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/AddAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/AddAutomaton.cpp -o CMakeFiles/cs236project.dir/AddAutomaton.cpp.s
+
 # Object files for target cs236project
 cs236project_OBJECTS = \
 "CMakeFiles/cs236project.dir/ColonAutomaton.cpp.o" \
 "CMakeFiles/cs236project.dir/ColonDashAutomaton.cpp.o" \
 "CMakeFiles/cs236project.dir/Lexer.cpp.o" \
 "CMakeFiles/cs236project.dir/main.cpp.o" \
-"CMakeFiles/cs236project.dir/Token.cpp.o"
+"CMakeFiles/cs236project.dir/Token.cpp.o" \
+"CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o" \
+"CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o" \
+"CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o" \
+"CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o" \
+"CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o" \
+"CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o" \
+"CMakeFiles/cs236project.dir/AddAutomaton.cpp.o"
 
 # External object files for target cs236project
 cs236project_EXTERNAL_OBJECTS =
@@ -138,9 +236,16 @@ cs236project: CMakeFiles/cs236project.dir/ColonDashAutomaton.cpp.o
 cs236project: CMakeFiles/cs236project.dir/Lexer.cpp.o
 cs236project: CMakeFiles/cs236project.dir/main.cpp.o
 cs236project: CMakeFiles/cs236project.dir/Token.cpp.o
+cs236project: CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o
+cs236project: CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o
+cs236project: CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o
+cs236project: CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o
+cs236project: CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o
+cs236project: CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o
+cs236project: CMakeFiles/cs236project.dir/AddAutomaton.cpp.o
 cs236project: CMakeFiles/cs236project.dir/build.make
 cs236project: CMakeFiles/cs236project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cs236project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable cs236project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cs236project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -123,6 +123,33 @@ cs236project/fast:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/build
 .PHONY : cs236project/fast
 
+AddAutomaton.o: AddAutomaton.cpp.o
+
+.PHONY : AddAutomaton.o
+
+# target to build an object file
+AddAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/AddAutomaton.cpp.o
+.PHONY : AddAutomaton.cpp.o
+
+AddAutomaton.i: AddAutomaton.cpp.i
+
+.PHONY : AddAutomaton.i
+
+# target to preprocess a source file
+AddAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/AddAutomaton.cpp.i
+.PHONY : AddAutomaton.cpp.i
+
+AddAutomaton.s: AddAutomaton.cpp.s
+
+.PHONY : AddAutomaton.s
+
+# target to generate assembly for a file
+AddAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/AddAutomaton.cpp.s
+.PHONY : AddAutomaton.cpp.s
+
 ColonAutomaton.o: ColonAutomaton.cpp.o
 
 .PHONY : ColonAutomaton.o
@@ -177,6 +204,60 @@ ColonDashAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/ColonDashAutomaton.cpp.s
 .PHONY : ColonDashAutomaton.cpp.s
 
+CommaAutomaton.o: CommaAutomaton.cpp.o
+
+.PHONY : CommaAutomaton.o
+
+# target to build an object file
+CommaAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o
+.PHONY : CommaAutomaton.cpp.o
+
+CommaAutomaton.i: CommaAutomaton.cpp.i
+
+.PHONY : CommaAutomaton.i
+
+# target to preprocess a source file
+CommaAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommaAutomaton.cpp.i
+.PHONY : CommaAutomaton.cpp.i
+
+CommaAutomaton.s: CommaAutomaton.cpp.s
+
+.PHONY : CommaAutomaton.s
+
+# target to generate assembly for a file
+CommaAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommaAutomaton.cpp.s
+.PHONY : CommaAutomaton.cpp.s
+
+Left_ParenAutomaton.o: Left_ParenAutomaton.cpp.o
+
+.PHONY : Left_ParenAutomaton.o
+
+# target to build an object file
+Left_ParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o
+.PHONY : Left_ParenAutomaton.cpp.o
+
+Left_ParenAutomaton.i: Left_ParenAutomaton.cpp.i
+
+.PHONY : Left_ParenAutomaton.i
+
+# target to preprocess a source file
+Left_ParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.i
+.PHONY : Left_ParenAutomaton.cpp.i
+
+Left_ParenAutomaton.s: Left_ParenAutomaton.cpp.s
+
+.PHONY : Left_ParenAutomaton.s
+
+# target to generate assembly for a file
+Left_ParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.s
+.PHONY : Left_ParenAutomaton.cpp.s
+
 Lexer.o: Lexer.cpp.o
 
 .PHONY : Lexer.o
@@ -203,6 +284,114 @@ Lexer.s: Lexer.cpp.s
 Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
+
+MultiplyAutomaton.o: MultiplyAutomaton.cpp.o
+
+.PHONY : MultiplyAutomaton.o
+
+# target to build an object file
+MultiplyAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o
+.PHONY : MultiplyAutomaton.cpp.o
+
+MultiplyAutomaton.i: MultiplyAutomaton.cpp.i
+
+.PHONY : MultiplyAutomaton.i
+
+# target to preprocess a source file
+MultiplyAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.i
+.PHONY : MultiplyAutomaton.cpp.i
+
+MultiplyAutomaton.s: MultiplyAutomaton.cpp.s
+
+.PHONY : MultiplyAutomaton.s
+
+# target to generate assembly for a file
+MultiplyAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.s
+.PHONY : MultiplyAutomaton.cpp.s
+
+PeriodAutomaton.o: PeriodAutomaton.cpp.o
+
+.PHONY : PeriodAutomaton.o
+
+# target to build an object file
+PeriodAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o
+.PHONY : PeriodAutomaton.cpp.o
+
+PeriodAutomaton.i: PeriodAutomaton.cpp.i
+
+.PHONY : PeriodAutomaton.i
+
+# target to preprocess a source file
+PeriodAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.i
+.PHONY : PeriodAutomaton.cpp.i
+
+PeriodAutomaton.s: PeriodAutomaton.cpp.s
+
+.PHONY : PeriodAutomaton.s
+
+# target to generate assembly for a file
+PeriodAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.s
+.PHONY : PeriodAutomaton.cpp.s
+
+Q_MarkAutomaton.o: Q_MarkAutomaton.cpp.o
+
+.PHONY : Q_MarkAutomaton.o
+
+# target to build an object file
+Q_MarkAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o
+.PHONY : Q_MarkAutomaton.cpp.o
+
+Q_MarkAutomaton.i: Q_MarkAutomaton.cpp.i
+
+.PHONY : Q_MarkAutomaton.i
+
+# target to preprocess a source file
+Q_MarkAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.i
+.PHONY : Q_MarkAutomaton.cpp.i
+
+Q_MarkAutomaton.s: Q_MarkAutomaton.cpp.s
+
+.PHONY : Q_MarkAutomaton.s
+
+# target to generate assembly for a file
+Q_MarkAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.s
+.PHONY : Q_MarkAutomaton.cpp.s
+
+Right_ParenAutomaton.o: Right_ParenAutomaton.cpp.o
+
+.PHONY : Right_ParenAutomaton.o
+
+# target to build an object file
+Right_ParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o
+.PHONY : Right_ParenAutomaton.cpp.o
+
+Right_ParenAutomaton.i: Right_ParenAutomaton.cpp.i
+
+.PHONY : Right_ParenAutomaton.i
+
+# target to preprocess a source file
+Right_ParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.i
+.PHONY : Right_ParenAutomaton.cpp.i
+
+Right_ParenAutomaton.s: Right_ParenAutomaton.cpp.s
+
+.PHONY : Right_ParenAutomaton.s
+
+# target to generate assembly for a file
+Right_ParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.s
+.PHONY : Right_ParenAutomaton.cpp.s
 
 Token.o: Token.cpp.o
 
@@ -267,15 +456,36 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cs236project"
+	@echo "... AddAutomaton.o"
+	@echo "... AddAutomaton.i"
+	@echo "... AddAutomaton.s"
 	@echo "... ColonAutomaton.o"
 	@echo "... ColonAutomaton.i"
 	@echo "... ColonAutomaton.s"
 	@echo "... ColonDashAutomaton.o"
 	@echo "... ColonDashAutomaton.i"
 	@echo "... ColonDashAutomaton.s"
+	@echo "... CommaAutomaton.o"
+	@echo "... CommaAutomaton.i"
+	@echo "... CommaAutomaton.s"
+	@echo "... Left_ParenAutomaton.o"
+	@echo "... Left_ParenAutomaton.i"
+	@echo "... Left_ParenAutomaton.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
+	@echo "... MultiplyAutomaton.o"
+	@echo "... MultiplyAutomaton.i"
+	@echo "... MultiplyAutomaton.s"
+	@echo "... PeriodAutomaton.o"
+	@echo "... PeriodAutomaton.i"
+	@echo "... PeriodAutomaton.s"
+	@echo "... Q_MarkAutomaton.o"
+	@echo "... Q_MarkAutomaton.i"
+	@echo "... Q_MarkAutomaton.s"
+	@echo "... Right_ParenAutomaton.o"
+	@echo "... Right_ParenAutomaton.i"
+	@echo "... Right_ParenAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
