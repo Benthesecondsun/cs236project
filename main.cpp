@@ -15,15 +15,18 @@ int main(int argc, char** argv) {
         cerr << "Failed to open input file." << endl;
         exit(1);
     }
-    string input;
+
+    string putIn, input;
     for (input; getline(bringIn, input);) {
-        cout << input; // THIS IS TESTING TO MAKE SURE I GOT THE WHOLE FILE IN A STRING DELETEME
+        putIn += input;
+        putIn += "\n";
     }
+    cout << putIn << endl;
 
     Lexer* lexer = new Lexer();
-    //lexer->Run(input);
-
-    delete lexer;
+    lexer->Run(putIn);
+    cout << lexer->lexerToString();
+    //delete lexer;
 
     return 0;
 }

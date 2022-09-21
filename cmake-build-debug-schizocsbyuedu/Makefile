@@ -231,6 +231,33 @@ CommaAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommaAutomaton.cpp.s
 .PHONY : CommaAutomaton.cpp.s
 
+FactsAutomaton.o: FactsAutomaton.cpp.o
+
+.PHONY : FactsAutomaton.o
+
+# target to build an object file
+FactsAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o
+.PHONY : FactsAutomaton.cpp.o
+
+FactsAutomaton.i: FactsAutomaton.cpp.i
+
+.PHONY : FactsAutomaton.i
+
+# target to preprocess a source file
+FactsAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/FactsAutomaton.cpp.i
+.PHONY : FactsAutomaton.cpp.i
+
+FactsAutomaton.s: FactsAutomaton.cpp.s
+
+.PHONY : FactsAutomaton.s
+
+# target to generate assembly for a file
+FactsAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/FactsAutomaton.cpp.s
+.PHONY : FactsAutomaton.cpp.s
+
 Left_ParenAutomaton.o: Left_ParenAutomaton.cpp.o
 
 .PHONY : Left_ParenAutomaton.o
@@ -366,6 +393,33 @@ Q_MarkAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.s
 .PHONY : Q_MarkAutomaton.cpp.s
 
+QueriesAutomaton.o: QueriesAutomaton.cpp.o
+
+.PHONY : QueriesAutomaton.o
+
+# target to build an object file
+QueriesAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o
+.PHONY : QueriesAutomaton.cpp.o
+
+QueriesAutomaton.i: QueriesAutomaton.cpp.i
+
+.PHONY : QueriesAutomaton.i
+
+# target to preprocess a source file
+QueriesAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.i
+.PHONY : QueriesAutomaton.cpp.i
+
+QueriesAutomaton.s: QueriesAutomaton.cpp.s
+
+.PHONY : QueriesAutomaton.s
+
+# target to generate assembly for a file
+QueriesAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.s
+.PHONY : QueriesAutomaton.cpp.s
+
 Right_ParenAutomaton.o: Right_ParenAutomaton.cpp.o
 
 .PHONY : Right_ParenAutomaton.o
@@ -392,6 +446,60 @@ Right_ParenAutomaton.s: Right_ParenAutomaton.cpp.s
 Right_ParenAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.s
 .PHONY : Right_ParenAutomaton.cpp.s
+
+RulesAutomaton.o: RulesAutomaton.cpp.o
+
+.PHONY : RulesAutomaton.o
+
+# target to build an object file
+RulesAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/RulesAutomaton.cpp.o
+.PHONY : RulesAutomaton.cpp.o
+
+RulesAutomaton.i: RulesAutomaton.cpp.i
+
+.PHONY : RulesAutomaton.i
+
+# target to preprocess a source file
+RulesAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/RulesAutomaton.cpp.i
+.PHONY : RulesAutomaton.cpp.i
+
+RulesAutomaton.s: RulesAutomaton.cpp.s
+
+.PHONY : RulesAutomaton.s
+
+# target to generate assembly for a file
+RulesAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/RulesAutomaton.cpp.s
+.PHONY : RulesAutomaton.cpp.s
+
+SchemesAutomaton.o: SchemesAutomaton.cpp.o
+
+.PHONY : SchemesAutomaton.o
+
+# target to build an object file
+SchemesAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.o
+.PHONY : SchemesAutomaton.cpp.o
+
+SchemesAutomaton.i: SchemesAutomaton.cpp.i
+
+.PHONY : SchemesAutomaton.i
+
+# target to preprocess a source file
+SchemesAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.i
+.PHONY : SchemesAutomaton.cpp.i
+
+SchemesAutomaton.s: SchemesAutomaton.cpp.s
+
+.PHONY : SchemesAutomaton.s
+
+# target to generate assembly for a file
+SchemesAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.s
+.PHONY : SchemesAutomaton.cpp.s
 
 Token.o: Token.cpp.o
 
@@ -468,6 +576,9 @@ help:
 	@echo "... CommaAutomaton.o"
 	@echo "... CommaAutomaton.i"
 	@echo "... CommaAutomaton.s"
+	@echo "... FactsAutomaton.o"
+	@echo "... FactsAutomaton.i"
+	@echo "... FactsAutomaton.s"
 	@echo "... Left_ParenAutomaton.o"
 	@echo "... Left_ParenAutomaton.i"
 	@echo "... Left_ParenAutomaton.s"
@@ -483,9 +594,18 @@ help:
 	@echo "... Q_MarkAutomaton.o"
 	@echo "... Q_MarkAutomaton.i"
 	@echo "... Q_MarkAutomaton.s"
+	@echo "... QueriesAutomaton.o"
+	@echo "... QueriesAutomaton.i"
+	@echo "... QueriesAutomaton.s"
 	@echo "... Right_ParenAutomaton.o"
 	@echo "... Right_ParenAutomaton.i"
 	@echo "... Right_ParenAutomaton.s"
+	@echo "... RulesAutomaton.o"
+	@echo "... RulesAutomaton.i"
+	@echo "... RulesAutomaton.s"
+	@echo "... SchemesAutomaton.o"
+	@echo "... SchemesAutomaton.i"
+	@echo "... SchemesAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"

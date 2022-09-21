@@ -10,6 +10,7 @@ private:
     std::vector<Automaton*> automata;
     std::vector<Token*> tokens;
 
+
     void CreateAutomata();
 
     // TODO: add any other private methods here (if needed)
@@ -19,7 +20,7 @@ public:
     ~Lexer();
 
     void Run(std::string& input);
-    
+    string lexerToString();
     // TODO: add other public methods here
 
 };

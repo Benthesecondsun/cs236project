@@ -111,6 +111,12 @@
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommaAutomaton.h">
 			<Option target="cs236project"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/FactsAutomaton.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/FactsAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Left_ParenAutomaton.cpp">
 			<Option target="cs236project"/>
 		</Unit>
@@ -141,10 +147,28 @@
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Q_MarkAutomaton.h">
 			<Option target="cs236project"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/QueriesAutomaton.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/QueriesAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.cpp">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/RulesAutomaton.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/RulesAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/SchemesAutomaton.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/SchemesAutomaton.h">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.cpp">
