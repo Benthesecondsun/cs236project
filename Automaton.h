@@ -9,6 +9,7 @@ protected:
     int newLines = 0;
     int index = 0;
     TokenType type;
+    bool didFail = false;
 
 public:
     // Default constructor -- since we have a constructor that takes a parameter,
@@ -39,6 +40,8 @@ public:
     virtual Token* CreateToken(std::string input, int lineNumber) { return new Token(type, input, lineNumber); }
 
     int NewLinesRead() const { return newLines; }
+    void SetFail() { didFail = true;}
+    bool GetFail() { return didFail;};
 };
 
 #endif // AUTOMATON_H

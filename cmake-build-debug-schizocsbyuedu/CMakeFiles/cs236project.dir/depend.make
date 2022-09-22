@@ -26,6 +26,11 @@ CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp
 CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.h
 CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../IdAutomaton.cpp
+CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../IdAutomaton.h
+CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../Token.h
+
 CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o: ../Left_ParenAutomaton.cpp
 CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o: ../Left_ParenAutomaton.h
@@ -37,12 +42,14 @@ CMakeFiles/cs236project.dir/Lexer.cpp.o: ../ColonAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../ColonDashAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../CommaAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../FactsAutomaton.h
+CMakeFiles/cs236project.dir/Lexer.cpp.o: ../IdAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../Left_ParenAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../Lexer.cpp
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../Lexer.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../MultiplyAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../PeriodAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../Q_MarkAutomaton.h
+CMakeFiles/cs236project.dir/Lexer.cpp.o: ../QueriesAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../Right_ParenAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../RulesAutomaton.h
 CMakeFiles/cs236project.dir/Lexer.cpp.o: ../SchemesAutomaton.h
@@ -63,6 +70,11 @@ CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o: ../Q_MarkAutomaton.cpp
 CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o: ../Q_MarkAutomaton.h
 CMakeFiles/cs236project.dir/Q_MarkAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.cpp
+CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.h
+CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o: ../Token.h
+
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Right_ParenAutomaton.cpp
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Right_ParenAutomaton.h
@@ -77,6 +89,11 @@ CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.cpp
 CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.h
 CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.o: ../Token.h
+
+CMakeFiles/cs236project.dir/StringAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/cs236project.dir/StringAutomaton.cpp.o: ../StringAutomaton.cpp
+CMakeFiles/cs236project.dir/StringAutomaton.cpp.o: ../StringAutomaton.h
+CMakeFiles/cs236project.dir/StringAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/cs236project.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/cs236project.dir/Token.cpp.o: ../Token.h

@@ -12,6 +12,9 @@
 #include "FactsAutomaton.h"
 #include "RulesAutomaton.h"
 #include "QueriesAutomaton.h"
+#include "IdAutomaton.h"
+#include "StringAutomaton.h"
+#include "CommentAutomaton.h"
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -19,6 +22,12 @@ Lexer::Lexer() {
 
 Lexer::~Lexer() {
     // TODO: need to clean up the memory in `automata` and `tokens`
+    for (int i = 0; i < automata.size(); i++) {
+        delete automata.at(i);
+        }
+    for (int i = 0; i < tokens.size(); i++) {
+        delete tokens.at(i);
+    }
 }
 
 void Lexer::CreateAutomata() {
@@ -35,9 +44,9 @@ void Lexer::CreateAutomata() {
     automata.push_back(new FactsAutomaton());
     automata.push_back(new RulesAutomaton());
     automata.push_back(new QueriesAutomaton());
-    //automata.push_back(new IdAutomaton());
-    //automata.push_back(new StringAutomaton());
-    //automata.push_back(new CommentAutomaton());
+    automata.push_back(new IdAutomaton());
+    automata.push_back(new StringAutomaton());
+    automata.push_back(new CommentAutomaton());
 }
 
 void Lexer::Run(std::string& input) {
@@ -45,12 +54,17 @@ void Lexer::Run(std::string& input) {
     int lineNumber = 1;
     // While there are more characters to tokenize
     while (input.size() > 0) {
+        //if (input.size() == 1) {break;}
         int maxRead = 0;
         Automaton *maxAutomaton = automata.at(0);
 
         // TODO: you need to handle whitespace inbetween tokens
-        while (input[0] == ' ') { input.erase(0,1);}
-        while (input[0] == '\n') { input.erase(0,1); lineNumber++;}
+        while (input[0] == ' '|input[0] == '\t'|input[0] == '\n') {
+            if (input[0] == ' ') {input.erase(0,1);}
+            else if (input[0] == '\t') {input.erase(0,1);}
+            else if (input[0] == '\n') {input.erase(0,1); lineNumber++;}
+        }
+        if (input.size() == 1| input.empty()) {break;}
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
         for (int i = 0; i < automata.size(); i++) {
@@ -64,9 +78,35 @@ void Lexer::Run(std::string& input) {
         // Here is the "Max" part of the algorithm
 
         if (maxRead > 0) {
-                Token* newToken = maxAutomaton->CreateToken(input,lineNumber);
-                lineNumber += maxAutomaton->NewLinesRead();
-                tokens.push_back(newToken);
+                if (maxAutomaton == automata.at(14)) {
+                    if (automata.at(14)->GetFail() == true){
+                        Token* newToken =  new Token(TokenType::UNDEFINED, input.substr(0,maxRead), lineNumber);
+                        lineNumber += maxAutomaton->NewLinesRead();
+                        tokens.push_back(newToken);
+                    }
+                    else {
+                        Token* newToken = maxAutomaton->CreateToken(input.substr(0,maxRead),lineNumber);
+                        lineNumber += maxAutomaton->NewLinesRead();
+                        tokens.push_back(newToken);
+                    }
+                }
+                else if (maxAutomaton == automata.at(15)) {
+                    if (automata.at(15)->GetFail() == true){
+                        Token* newToken =  new Token(TokenType::UNDEFINED, input.substr(0,maxRead), lineNumber);
+                        lineNumber += maxAutomaton->NewLinesRead();
+                        tokens.push_back(newToken);
+                    }
+                    else {
+                        Token* newToken = maxAutomaton->CreateToken(input.substr(0,maxRead),lineNumber);
+                        lineNumber += maxAutomaton->NewLinesRead();
+                        tokens.push_back(newToken);
+                    }
+                }
+                else {
+                    Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+                    lineNumber += maxAutomaton->NewLinesRead();
+                    tokens.push_back(newToken);
+                }
         }
         // No automaton accepted input
         // Create single character undefined token
@@ -74,7 +114,7 @@ void Lexer::Run(std::string& input) {
                 maxRead = 1;
                 char TESTCHAR = input[0];
                 string toString(1,input[0]);
-                Token* newToken =  new Token(TokenType::UNDEFINED, toString, lineNumber);
+                Token* newToken =  new Token(TokenType::UNDEFINED, input.substr(0, maxRead), lineNumber);
                 tokens.push_back(newToken);
         }
         // Update `input` by removing characters read to create Token
@@ -87,9 +127,10 @@ void Lexer::Run(std::string& input) {
 
 string Lexer::lexerToString()
 {
-    string outstring = "";
+    string outString = "";
     for (int i = 0; i < tokens.size(); i++) {
-        outstring += tokens.at(i)->toString() + "\n";
+        outString += tokens.at(i)->toString() + "\n";
     }
-    return outstring;
+    outString += "Total Tokens = " + to_string(tokens.size());
+    return outString;
 }

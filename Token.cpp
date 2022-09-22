@@ -35,5 +35,5 @@ string Token::tokenToString()
 
 string Token::toString()
 {
-    return "(" + Token::tokenToString() + ", " + "\"" + Description + "\" " + to_string(Line) + ")";
+    return "(" + Token::tokenToString() + "," + "\"" + Description + "\"," + to_string(Line) + ")";
 }

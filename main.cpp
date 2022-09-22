@@ -3,7 +3,7 @@
 #include <string>
 #include <sstream>
 #include <fstream>
-// #include <cctype> // This gives us the isspace() function also gives isalpha() and isalnum()
+#include <cctype> // This gives us the isspace() function also gives isalpha() and isalnum()
 using namespace std;
 
 int main(int argc, char** argv) {
@@ -15,18 +15,12 @@ int main(int argc, char** argv) {
         cerr << "Failed to open input file." << endl;
         exit(1);
     }
-
-    string putIn, input;
-    for (input; getline(bringIn, input);) {
-        putIn += input;
-        putIn += "\n";
-    }
-    cout << putIn << endl;
+    string input( (std::istreambuf_iterator<char>(bringIn) ), (std::istreambuf_iterator<char>()) );
 
     Lexer* lexer = new Lexer();
-    lexer->Run(putIn);
+    lexer->Run(input);
     cout << lexer->lexerToString();
-    //delete lexer;
+    delete lexer;
 
     return 0;
 }

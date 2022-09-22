@@ -231,6 +231,33 @@ CommaAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommaAutomaton.cpp.s
 .PHONY : CommaAutomaton.cpp.s
 
+CommentAutomaton.o: CommentAutomaton.cpp.o
+
+.PHONY : CommentAutomaton.o
+
+# target to build an object file
+CommentAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommentAutomaton.cpp.o
+.PHONY : CommentAutomaton.cpp.o
+
+CommentAutomaton.i: CommentAutomaton.cpp.i
+
+.PHONY : CommentAutomaton.i
+
+# target to preprocess a source file
+CommentAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommentAutomaton.cpp.i
+.PHONY : CommentAutomaton.cpp.i
+
+CommentAutomaton.s: CommentAutomaton.cpp.s
+
+.PHONY : CommentAutomaton.s
+
+# target to generate assembly for a file
+CommentAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/CommentAutomaton.cpp.s
+.PHONY : CommentAutomaton.cpp.s
+
 FactsAutomaton.o: FactsAutomaton.cpp.o
 
 .PHONY : FactsAutomaton.o
@@ -257,6 +284,33 @@ FactsAutomaton.s: FactsAutomaton.cpp.s
 FactsAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/FactsAutomaton.cpp.s
 .PHONY : FactsAutomaton.cpp.s
+
+IdAutomaton.o: IdAutomaton.cpp.o
+
+.PHONY : IdAutomaton.o
+
+# target to build an object file
+IdAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/IdAutomaton.cpp.o
+.PHONY : IdAutomaton.cpp.o
+
+IdAutomaton.i: IdAutomaton.cpp.i
+
+.PHONY : IdAutomaton.i
+
+# target to preprocess a source file
+IdAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/IdAutomaton.cpp.i
+.PHONY : IdAutomaton.cpp.i
+
+IdAutomaton.s: IdAutomaton.cpp.s
+
+.PHONY : IdAutomaton.s
+
+# target to generate assembly for a file
+IdAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/IdAutomaton.cpp.s
+.PHONY : IdAutomaton.cpp.s
 
 Left_ParenAutomaton.o: Left_ParenAutomaton.cpp.o
 
@@ -501,6 +555,33 @@ SchemesAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.s
 .PHONY : SchemesAutomaton.cpp.s
 
+StringAutomaton.o: StringAutomaton.cpp.o
+
+.PHONY : StringAutomaton.o
+
+# target to build an object file
+StringAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/StringAutomaton.cpp.o
+.PHONY : StringAutomaton.cpp.o
+
+StringAutomaton.i: StringAutomaton.cpp.i
+
+.PHONY : StringAutomaton.i
+
+# target to preprocess a source file
+StringAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/StringAutomaton.cpp.i
+.PHONY : StringAutomaton.cpp.i
+
+StringAutomaton.s: StringAutomaton.cpp.s
+
+.PHONY : StringAutomaton.s
+
+# target to generate assembly for a file
+StringAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/StringAutomaton.cpp.s
+.PHONY : StringAutomaton.cpp.s
+
 Token.o: Token.cpp.o
 
 .PHONY : Token.o
@@ -576,9 +657,15 @@ help:
 	@echo "... CommaAutomaton.o"
 	@echo "... CommaAutomaton.i"
 	@echo "... CommaAutomaton.s"
+	@echo "... CommentAutomaton.o"
+	@echo "... CommentAutomaton.i"
+	@echo "... CommentAutomaton.s"
 	@echo "... FactsAutomaton.o"
 	@echo "... FactsAutomaton.i"
 	@echo "... FactsAutomaton.s"
+	@echo "... IdAutomaton.o"
+	@echo "... IdAutomaton.i"
+	@echo "... IdAutomaton.s"
 	@echo "... Left_ParenAutomaton.o"
 	@echo "... Left_ParenAutomaton.i"
 	@echo "... Left_ParenAutomaton.s"
@@ -606,6 +693,9 @@ help:
 	@echo "... SchemesAutomaton.o"
 	@echo "... SchemesAutomaton.i"
 	@echo "... SchemesAutomaton.s"
+	@echo "... StringAutomaton.o"
+	@echo "... StringAutomaton.i"
+	@echo "... StringAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"

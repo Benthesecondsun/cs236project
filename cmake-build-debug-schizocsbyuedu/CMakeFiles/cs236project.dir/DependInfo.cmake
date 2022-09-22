@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/ColonAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/ColonAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/ColonDashAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/ColonDashAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommaAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/CommaAutomaton.cpp.o"
+  "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommentAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/CommentAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/FactsAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o"
+  "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/IdAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/IdAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Left_ParenAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Lexer.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/Lexer.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o"
@@ -18,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/RulesAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/RulesAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/SchemesAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/SchemesAutomaton.cpp.o"
+  "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/StringAutomaton.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/StringAutomaton.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/Token.cpp.o"
   "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/main.cpp" "/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles/cs236project.dir/main.cpp.o"
   )
