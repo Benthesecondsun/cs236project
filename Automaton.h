@@ -15,7 +15,7 @@ public:
     // Default constructor -- since we have a constructor that takes a parameter,
     //   the compiler will autogenerate a default constructor if not explicit.
     Automaton() : Automaton(TokenType::UNDEFINED) {}
-
+    virtual ~Automaton() = default;
     Automaton(TokenType type) { this->type = type; }
 
     // Start the automaton and return the number of characters read
