@@ -22,10 +22,10 @@ Lexer::Lexer() {
 
 Lexer::~Lexer() {
     // TODO: need to clean up the memory in `automata` and `tokens`
-    for (int i = 0; i < automata.size(); i++) {
+    for (unsigned int i = 0; i < automata.size(); i++) {
         delete automata.at(i);
         }
-    for (int i = 0; i < tokens.size(); i++) {
+    for (unsigned int i = 0; i < tokens.size(); i++) {
         delete tokens.at(i);
     }
 }
@@ -67,7 +67,7 @@ void Lexer::Run(std::string& input) {
         if (input.size() == 1| input.empty()) {break;}
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
-        for (int i = 0; i < automata.size(); i++) {
+        for (unsigned int i = 0; i < automata.size(); i++) {
             int inputRead = automata.at(i)->Start(input);
             if (inputRead > maxRead) {
                 maxRead = inputRead;
@@ -128,7 +128,7 @@ void Lexer::Run(std::string& input) {
 string Lexer::lexerToString()
 {
     string outString = "";
-    for (int i = 0; i < tokens.size(); i++) {
+    for (unsigned int i = 0; i < tokens.size(); i++) {
         outString += tokens.at(i)->toString() + "\n";
     }
     outString += "Total Tokens = " + to_string(tokens.size());
