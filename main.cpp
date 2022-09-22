@@ -1,9 +1,8 @@
 #include "Lexer.h"
 #include <iostream>
 #include <string>
-#include <sstream>
 #include <fstream>
-#include <cctype> // This gives us the isspace() function also gives isalpha() and isalnum()
+
 using namespace std;
 
 int main(int argc, char** argv) {
@@ -19,8 +18,7 @@ int main(int argc, char** argv) {
 
     Lexer* lexer = new Lexer();
     lexer->Run(input);
-    cout << lexer->lexerToString() << endl;
+    cout << lexer->lexerToString();
     delete lexer;
     return 0;
-
 }
