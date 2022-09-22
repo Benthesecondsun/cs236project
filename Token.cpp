@@ -28,9 +28,8 @@ string Token::tokenToString()
         case TokenType::COMMENT: return "COMMENT";
         case TokenType::EOF_TYPE: return "EOF";
         case TokenType::UNDEFINED: return "UNDEFINED";
-
     }
-
+    return 0;
 }
 
 string Token::toString()

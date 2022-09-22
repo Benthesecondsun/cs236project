@@ -112,7 +112,6 @@ void Lexer::Run(std::string& input) {
         // Create single character undefined token
         else {
                 maxRead = 1;
-                char TESTCHAR = input[0];
                 string toString(1,input[0]);
                 Token* newToken =  new Token(TokenType::UNDEFINED, input.substr(0, maxRead), lineNumber);
                 tokens.push_back(newToken);
