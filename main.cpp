@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 
     Lexer* lexer = new Lexer();
     lexer->Run(input);
-    cout << lexer->lexerToString();
+    cout << lexer->lexerToString() << "\n";
     delete lexer;
     return 0;
 }
