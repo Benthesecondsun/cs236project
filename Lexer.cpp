@@ -59,12 +59,12 @@ void Lexer::Run(std::string& input) {
         Automaton *maxAutomaton = automata.at(0);
 
         // TODO: you need to handle whitespace inbetween tokens
-        while (input[0] == ' '|input[0] == '\t'|input[0] == '\n') {
+        while ((input[0] == ' ')|(input[0] == '\t')|(input[0] == '\n')) {
             if (input[0] == ' ') {input.erase(0,1);}
             else if (input[0] == '\t') {input.erase(0,1);}
             else if (input[0] == '\n') {input.erase(0,1); lineNumber++;}
         }
-        if (input.size() == 1| input.empty()) {break;}
+        if ((input.size() == 1)| (input.empty())) {break;}
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
         for (unsigned int i = 0; i < automata.size(); i++) {
