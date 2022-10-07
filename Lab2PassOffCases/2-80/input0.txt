@@ -2,8 +2,8 @@
 # FOR USE ONLY DURING SPRING 2021 SEMESTER
 # passoffInput20     SUCCESS
 # This tests their 'success' with a few comments tokens now and then
-  #Schemes: 
-Schemes: 
+  #Schemes:
+Schemes:
   #student(N, I, A, M)
 student(N, I, A, M)
   #WhoMajor(N,M)

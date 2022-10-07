@@ -117,6 +117,12 @@
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommentAutomaton.h">
 			<Option target="cs236project"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/DatalogProgram.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/DatalogProgram.h">
+			<Option target="cs236project"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/FactsAutomaton.cpp">
 			<Option target="cs236project"/>
 		</Unit>
@@ -147,10 +153,28 @@
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.h">
 			<Option target="cs236project"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parser.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parser.h">
+			<Option target="cs236project"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/PeriodAutomaton.cpp">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/PeriodAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Q_MarkAutomaton.cpp">
@@ -169,6 +193,12 @@
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.h">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/RulesAutomaton.cpp">

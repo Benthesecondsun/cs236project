@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Automaton.h
-Token.h
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
-
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/StringAutomaton.cpp
-StringAutomaton.h
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/StringAutomaton.h
-
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/StringAutomaton.h
-Automaton.h
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Automaton.h
-
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
 string
+-
+vector
+-
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.cpp
+Predicate.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+Parameter.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
+string
+-
+vector
 -
 

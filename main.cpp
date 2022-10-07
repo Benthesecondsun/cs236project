@@ -1,4 +1,5 @@
 #include "Lexer.h"
+#include "Parser.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -14,14 +15,36 @@ int main(int argc, char** argv) {
         cerr << "Failed to open input file." << endl;
         exit(1);
     }
-    //string input( (std::istreambuf_iterator<char>(bringIn) ), (std::istreambuf_iterator<char>()) );
     string input, line;
     while (getline(bringIn, line)) {
         input += line + "\n";
     }
+    /*                                                           ---------------------- _||_ --
+                                                                 --Run The Lexer------- \  / --
+                                                                 ----------------------  \/  --
+    */
     Lexer* lexer = new Lexer();
     lexer->Run(input);
-    cout << lexer->lexerToString();
+    /*                                                           ---------------------- _||_ --
+                                                                 --Run The Parser------ \  / --
+                                                                 ----------------------  \/  --
+    */
+    vector<Token*> inToken = lexer->outLexTokens();
+    Parser* myParser = new Parser(inToken);
+
+    try {
+        myParser->checkSyntax();
+        cout << endl << "Success!" << endl;
+        cout << myParser->parserToString();// DELETEME THIS IS FOR TESTING
+    }
+    catch(string e) {cout << endl << "Failure!" << endl << "  " << e << endl;}
+
+    /*                                                           ---------------------- _||_ --
+                                                                 --Clean Up All New---- \  / --
+                                                                 ----------------------  \/  --
+    */
     delete lexer;
+    delete myParser;
+
     return 0;
 }

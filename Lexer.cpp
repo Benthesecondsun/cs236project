@@ -133,3 +133,8 @@ string Lexer::lexerToString()
     outString += "Total Tokens = " + to_string(tokens.size());
     return outString;
 }
+
+vector<Token*> Lexer::outLexTokens()
+{
+    return tokens;
+}

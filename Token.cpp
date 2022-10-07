@@ -36,3 +36,11 @@ string Token::toString()
 {
     return "(" + Token::tokenToString() + "," + "\"" + Description + "\"," + to_string(Line) + ")";
 }
+
+TokenType Token::getType() {
+    return Type;
+}
+
+string Token::getDesc() {
+    return Description;
+}

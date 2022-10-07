@@ -34,8 +34,10 @@ private:
 
 public:
     Token(TokenType type, std::string description, int line);
-        string tokenToString();
+    string tokenToString();
     string toString();
+    TokenType getType();
+    string getDesc();
     // TODO: add other needed methods
 };
 

@@ -21,6 +21,7 @@ public:
 
     void Run(std::string& input);
     string lexerToString();
+    vector<Token*> outLexTokens();
     // TODO: add other public methods here
 
 };
