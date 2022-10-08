@@ -68,7 +68,6 @@ void Parser::manyVariables() {
     if (tokens.at(tokenNum)->getType() == TokenType::ID) {
         inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType();
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
@@ -110,7 +109,6 @@ void Parser::manyStrings() {
         inParen += tokens.at(tokenNum)->getDesc();
         program.setDomain((tokens.at(tokenNum)->getDesc()));
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType();
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
@@ -144,7 +142,6 @@ void Parser::manyRules() { // get initial ID and (
     if (tokens.at(tokenNum)->getType() == TokenType::ID) {
         name = tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() != TokenType::LEFT_PAREN) {throw tokens.at(tokenNum)->toString();}
         inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
@@ -166,7 +163,6 @@ void Parser::findHead(Predicate* newPred) {
     if (tokens.at(tokenNum)->getType() == TokenType::ID) {
         inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
@@ -195,7 +191,6 @@ void Parser::findBody(Predicate* newPred, vector<Predicate*> newVec) {
     if (tokens.at(tokenNum)->getType() == TokenType::ID) {
         inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
@@ -204,7 +199,6 @@ void Parser::findBody(Predicate* newPred, vector<Predicate*> newVec) {
         else if (tokens.at(tokenNum)->getType() == TokenType::RIGHT_PAREN) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
-            TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
             if (tokens.at(tokenNum)->getType() == TokenType::PERIOD) {
                 tokenNum++;
                 newVec.push_back(new Predicate(name, inParen));
@@ -236,7 +230,6 @@ void Parser::findBody(Predicate* newPred, vector<Predicate*> newVec) {
     else if (tokens.at(tokenNum)->getType() == TokenType::STRING) {
         inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
@@ -295,7 +288,6 @@ void Parser::manyTests() {
     if (tokens.at(tokenNum)->getType() == TokenType::STRING) {
         inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType();
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
@@ -304,7 +296,6 @@ void Parser::manyTests() {
         else if (tokens.at(tokenNum)->getType() == TokenType::RIGHT_PAREN) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
-            TokenType testToken = tokens.at(tokenNum)->getType();
             if (tokens.at(tokenNum)->getType() == TokenType::Q_MARK) {
                 tokenNum++;
                 program.addQuery(name, inParen);
@@ -321,7 +312,6 @@ void Parser::manyTests() {
     else if (tokens.at(tokenNum)->getType() == TokenType::ID) {
         inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        TokenType testToken = tokens.at(tokenNum)->getType();
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
             inParen += tokens.at(tokenNum)->getDesc();tokenNum++;
             manyTests();
@@ -329,13 +319,11 @@ void Parser::manyTests() {
         else if (tokens.at(tokenNum)->getType() == TokenType::RIGHT_PAREN) {
             inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
-            TokenType testToken = tokens.at(tokenNum)->getType();
             if (tokens.at(tokenNum)->getType() == TokenType::Q_MARK) {
                 tokenNum++;
                 program.addQuery(name, inParen);
                 name = "";
                 inParen = "";
-                TokenType testToken = tokens.at(tokenNum)->getType();
                 if (tokens.at(tokenNum)->getType() == TokenType::ID) {manyQueries();}
             }
             else {throw tokens.at(tokenNum)->toString();}

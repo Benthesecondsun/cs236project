@@ -12,7 +12,7 @@ Parameter::Parameter(string in) {
 Parameter::~Parameter() {}
 
 void Parameter::split(string in) {
-    int counter = 0;
+    unsigned int counter = 0;
     string outString = "";
     while (in.at(counter) != ',') {
         outString += in.at(counter);
