@@ -19,12 +19,11 @@ private:
     vector<Predicate*> queries;
     set<string> domains;
 public:
-    ;
     DatalogProgram();
     ~DatalogProgram();
     void addScheme(string inID, string inParams);
     void addFact(string inID, string inParams);
-    void addRule(string head, string inID, string inParams);
+    void addRule(Predicate* head, vector<Predicate*> paraVec);
     void addQuery(string inID, string inParams);
     string tostring();
     void setDomain(string in);

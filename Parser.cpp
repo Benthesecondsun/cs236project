@@ -139,34 +139,47 @@ void Parser::manyStrings() {
                                                             ----------------------  \/  --
 */
 void Parser::manyRules() { // get initial ID and (
+    Predicate* holder = new Predicate();
+    vector<Predicate*> predVec;
     if (tokens.at(tokenNum)->getType() == TokenType::ID) {
+        name = tokens.at(tokenNum)->getDesc();
         tokenNum++;
         TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() != TokenType::LEFT_PAREN) {throw tokens.at(tokenNum)->toString();}
+        inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
-        findHead();
-            if (tokens.at(tokenNum)->getType() == TokenType::ID) {
-                tokenNum++;
-                if (tokens.at(tokenNum)->getType() != TokenType::LEFT_PAREN) {throw tokens.at(tokenNum)->toString();}
-                tokenNum++;
-                findBody();
-            }
+        findHead(holder);
+        if (tokens.at(tokenNum)->getType() == TokenType::ID) {
+            name = tokens.at(tokenNum)->getDesc();
+            tokenNum++;
+            if (tokens.at(tokenNum)->getType() != TokenType::LEFT_PAREN) {throw tokens.at(tokenNum)->toString();}
+            inParen += tokens.at(tokenNum)->getDesc();
+            tokenNum++;
+            findBody(holder, predVec);
+        }
             else { throw tokens.at(tokenNum)->toString();}
     }
     else { throw tokens.at(tokenNum)->toString();}
 }
 
-void Parser::findHead() {
+void Parser::findHead(Predicate* newPred) {
     if (tokens.at(tokenNum)->getType() == TokenType::ID) {
+        inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
         TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
+            inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
-            findHead(); // This goes until it hits the )
-        }// KEEP GOING FROM HERE< NOT DONE
+            findHead(newPred); // This goes until it hits the )
+        }
         else if (tokens.at(tokenNum)->getType() == TokenType::RIGHT_PAREN) {
+            inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
             if (tokens.at(tokenNum)->getType() == TokenType::COLON_DASH) {
+                newPred->setID(name);
+                newPred->setVector(inParen);
+                name = "";
+                inParen = "";
                 tokenNum++;
             }
             else {throw tokens.at(tokenNum)->toString();}
@@ -177,28 +190,41 @@ void Parser::findHead() {
     else { throw tokens.at(tokenNum)->toString();}
 }
 
-void Parser::findBody() {
+void Parser::findBody(Predicate* newPred, vector<Predicate*> newVec) {
+
     if (tokens.at(tokenNum)->getType() == TokenType::ID) {
+        inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
         TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
+            inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
-            findBody(); // This goes until it hits the )
+            findBody(newPred, newVec); // This goes until it hits the )
         }// KEEP GOING FROM HERE< NOT DONE
         else if (tokens.at(tokenNum)->getType() == TokenType::RIGHT_PAREN) {
+            inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
             TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
             if (tokens.at(tokenNum)->getType() == TokenType::PERIOD) {
                 tokenNum++;
+                newVec.push_back(new Predicate(name, inParen));
+                program.addRule(newPred, newVec);
+                name = "";
+                inParen = "";
                 if (tokens.at(tokenNum)->getType() == TokenType::ID) {manyRules();}
             }
             else if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
                 tokenNum++;
+                newVec.push_back(new Predicate(name, inParen));
+                name = "";
+                inParen = "";
                 if (tokens.at(tokenNum)->getType() == TokenType::ID) {
+                    name = tokens.at(tokenNum)->getDesc();
                     tokenNum++;
                     if (tokens.at(tokenNum)->getType() != TokenType::LEFT_PAREN) {throw tokens.at(tokenNum)->toString();}
+                    inParen += tokens.at(tokenNum)->getDesc();
                     tokenNum++;
-                    findBody();
+                    findBody(newPred, newVec);
                 }
                 else { throw tokens.at(tokenNum)->toString();} // if it is adding multiples it will repeat the body.
             }
@@ -208,17 +234,39 @@ void Parser::findBody() {
 
     }
     else if (tokens.at(tokenNum)->getType() == TokenType::STRING) {
+        inParen += tokens.at(tokenNum)->getDesc();
         tokenNum++;
         TokenType testToken = tokens.at(tokenNum)->getType(); // DELETEME
         if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
+            inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
-            findBody(); // This goes until it hits the )
+            findBody(newPred, newVec); // This goes until it hits the )
         }// KEEP GOING FROM HERE< NOT DONE
         else if (tokens.at(tokenNum)->getType() == TokenType::RIGHT_PAREN) {
+            inParen += tokens.at(tokenNum)->getDesc();
             tokenNum++;
             if (tokens.at(tokenNum)->getType() == TokenType::PERIOD) {
                 tokenNum++;
+                newVec.push_back(new Predicate(name, inParen));
+                program.addRule(newPred, newVec);
+                name = "";
+                inParen = "";
                 if (tokens.at(tokenNum)->getType() == TokenType::ID) {manyRules();}
+            }
+            else if (tokens.at(tokenNum)->getType() == TokenType::COMMA) {
+                tokenNum++;
+                newVec.push_back(new Predicate(name, inParen));
+                name = "";
+                inParen = "";
+                if (tokens.at(tokenNum)->getType() == TokenType::ID) {
+                    name = tokens.at(tokenNum)->getDesc();
+                    tokenNum++;
+                    if (tokens.at(tokenNum)->getType() != TokenType::LEFT_PAREN) {throw tokens.at(tokenNum)->toString();}
+                    inParen += tokens.at(tokenNum)->getDesc();
+                    tokenNum++;
+                    findBody(newPred, newVec);
+                }
+                else { throw tokens.at(tokenNum)->toString();} // if it is adding multiples it will repeat the body.
             }
             else {throw tokens.at(tokenNum)->toString();}
         }

@@ -9,6 +9,25 @@ Predicate::~Predicate() {
         delete Parameter;
     }
 }
+void Predicate::setID(string inID) {
+    ID = inID;
+}
+
+void Predicate::setVector(string inParams) {
+    params.push_back(new Parameter(inParams));
+}
+
+void Predicate::resetID() {
+    ID = "";
+}
+
+
+void Predicate::resetVector() {
+    for (unsigned int i = 0; i < params.size(); ++i) {
+        delete params.at(i);
+    }
+}
+
 
 string Predicate::getID() {
     return ID;

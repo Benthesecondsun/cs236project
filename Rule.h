@@ -7,11 +7,11 @@ using namespace std;
 
 class Rule {
 private:
-    Predicate* Head;
-    //vector<Predicate*> body;
+    Predicate* head;
+    vector<Predicate*> body;
 public:
-    Rule(Predicate* inHead, vector<Predicate*> copyVec);
-    ~Rule();
+    Rule(Predicate* header, vector<Predicate*> theBody);
+    ~Rule() {}
     string toString();
 };
 

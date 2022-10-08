@@ -18,7 +18,7 @@ void DatalogProgram::addFact(string inID, string inParams) {
     facts.push_back(new Predicate(inID, inParams));
 }
 
-void DatalogProgram::addRule(Predicate head, vector<Parameter*> paraVec) {
+void DatalogProgram::addRule(Predicate* head, vector<Predicate*> paraVec) {
     numRules++;
     rules.push_back(new Rule(head, paraVec));
 }
@@ -45,17 +45,17 @@ string DatalogProgram::tostring() {
     }
     outString += "Rules(" + to_string(numRules) + "):\n";
     for (unsigned int i = 0; i < rules.size(); i++) {
-        outString += "  " + rules.at(i)->toString() + "\n";
+        outString += "  " + rules.at(i)->toString() + ".\n";
     }
     outString += "Queries(" + to_string(numQueries) + "):\n";
     for (unsigned int i = 0; i < queries.size(); i++) {
         outString += "  " + queries.at(i)->toString() + "?\n";
     }
-    outString += "Domain(" + to_string(domains.size()) + "):\n";
+    outString += "Domain(" + to_string(domains.size()) + "):\n  ";
     set<string>::iterator itr;
         for (itr = domains.begin(); itr != domains.end(); itr++) {
             outString +=  *itr;
-            if (itr != domains.end()) {outString +=  "\n";}
+            if (itr != domains.end()) {outString +=  "\n  ";}
         }
     return outString;
 }

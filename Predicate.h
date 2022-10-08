@@ -14,7 +14,12 @@ private:
     vector<Parameter*> params;
 public:
     Predicate(string inID, string inParams);
+    Predicate() {};
     ~Predicate();
+    void setID(string inID);
+    void setVector(string inParams);
+    void resetID();
+    void resetVector();
     string getID();
     vector<Parameter*> getParams();
 

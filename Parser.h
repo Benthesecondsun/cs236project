@@ -16,6 +16,8 @@ private:
     vector<Token*> tokens;
     int tokenNum;
     string inParen, name;
+    //Predicate holder;
+    //vector<Predicate*> predVec;
 public:
     Parser(vector<Token*> inTokens);
     ~Parser();
@@ -26,8 +28,8 @@ public:
     void manyFacts();
     void manyStrings();
     void manyRules();
-    void findHead();
-    void findBody();
+    void findHead(Predicate* newPred);
+    void findBody(Predicate* newPred, vector<Predicate*> newVec);
     void manyQueries();
     void manyTests();
 
