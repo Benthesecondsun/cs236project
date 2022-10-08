@@ -51,11 +51,10 @@ string DatalogProgram::tostring() {
     for (unsigned int i = 0; i < queries.size(); i++) {
         outString += "  " + queries.at(i)->toString() + "?\n";
     }
-    outString += "Domain(" + to_string(domains.size()) + "):\n  ";
+    outString += "Domain(" + to_string(domains.size()) + "):\n";
     set<string>::iterator itr;
         for (itr = domains.begin(); itr != domains.end(); itr++) {
-            outString +=  *itr;
-            if (itr != domains.end()) {outString +=  "\n  ";}
+            outString += "  " + *itr + "\n";
         }
     return outString;
 }

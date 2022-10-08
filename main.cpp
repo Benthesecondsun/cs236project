@@ -34,8 +34,8 @@ int main(int argc, char** argv) {
 
     try {
         myParser->checkSyntax();
-        cout << endl << "Success!" << endl;
-        cout << myParser->parserToString() << "\n";// DELETEME THIS IS FOR TESTING
+        cout << "Success!" << endl;
+        cout << myParser->parserToString();
     }
     catch(string e) {cout << "Failure!\n" << "  " << e << "\n";}
 
