@@ -31,11 +31,15 @@ CMakeFiles/cs236project.dir/DatalogProgram.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/DatalogProgram.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.h
 CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Automaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/FactsAutomaton.cpp
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/FactsAutomaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
+CMakeFiles/cs236project.dir/Header.cpp.o
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.cpp
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.h
 CMakeFiles/cs236project.dir/IdAutomaton.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Automaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/IdAutomaton.cpp
@@ -72,6 +76,9 @@ CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.cpp
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
+CMakeFiles/cs236project.dir/MyTuple.cpp.o
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.cpp
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
 CMakeFiles/cs236project.dir/Parameter.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.cpp
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
@@ -81,6 +88,7 @@ CMakeFiles/cs236project.dir/Parser.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parser.cpp
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parser.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
 CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Automaton.h
@@ -101,11 +109,21 @@ CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/QueriesAutomaton.cpp
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/QueriesAutomaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
+CMakeFiles/cs236project.dir/Relation.cpp.o
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.h
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.cpp
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.h
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Automaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.cpp
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
+CMakeFiles/cs236project.dir/Rule.cpp.o
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.cpp
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.h
 CMakeFiles/cs236project.dir/RulesAutomaton.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Automaton.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/RulesAutomaton.cpp
@@ -131,5 +149,6 @@ CMakeFiles/cs236project.dir/main.cpp.o
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parser.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+ /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Token.h
  /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/main.cpp

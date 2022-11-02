@@ -1,5 +1,6 @@
 #include "Lexer.h"
 #include "Parser.h"
+#include "Interpreter.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -12,7 +13,7 @@ int main(int argc, char** argv) {
     bringIn.open(argv[1]);
     if (bringIn.fail())
     {
-        cerr << "Failed to open input file." << endl;
+        cerr << "Failed to open input file." << "\n";
         exit(1);
     }
     string input, line;
@@ -31,13 +32,18 @@ int main(int argc, char** argv) {
     */
     vector<Token*> inToken = lexer->outLexTokens();
     Parser* myParser = new Parser(inToken);
-
+    string interpreterInput; // use this to get the parser's data to the interpreter.
     try {
         myParser->checkSyntax();
-        cout << "Success!" << endl;
+        cout << "Success!" << "\n";
         cout << myParser->parserToString();
     }
     catch(string e) {cout << "Failure!\n" << "  " << e << "\n";}
+    /*                                                           ---------------------- _||_ --
+                                                                 --Run The Interpreter- \  / --
+                                                                 ----------------------  \/  --
+    */
+
 
     /*                                                           ---------------------- _||_ --
                                                                  --Clean Up All New---- \  / --

@@ -30,11 +30,15 @@ CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
 CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../DatalogProgram.h
 CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../Parameter.h
 CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../Predicate.h
+CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../Rule.h
 
 CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp
 CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.h
 CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o: ../Token.h
+
+CMakeFiles/cs236project.dir/Header.cpp.o: ../Header.cpp
+CMakeFiles/cs236project.dir/Header.cpp.o: ../Header.h
 
 CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../IdAutomaton.cpp
@@ -72,6 +76,9 @@ CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomaton.cpp
 CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomaton.h
 CMakeFiles/cs236project.dir/MultiplyAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/cs236project.dir/MyTuple.cpp.o: ../MyTuple.cpp
+CMakeFiles/cs236project.dir/MyTuple.cpp.o: ../MyTuple.h
+
 CMakeFiles/cs236project.dir/Parameter.cpp.o: ../Parameter.cpp
 CMakeFiles/cs236project.dir/Parameter.cpp.o: ../Parameter.h
 
@@ -80,6 +87,7 @@ CMakeFiles/cs236project.dir/Parser.cpp.o: ../Parameter.h
 CMakeFiles/cs236project.dir/Parser.cpp.o: ../Parser.cpp
 CMakeFiles/cs236project.dir/Parser.cpp.o: ../Parser.h
 CMakeFiles/cs236project.dir/Parser.cpp.o: ../Predicate.h
+CMakeFiles/cs236project.dir/Parser.cpp.o: ../Rule.h
 CMakeFiles/cs236project.dir/Parser.cpp.o: ../Token.h
 
 CMakeFiles/cs236project.dir/PeriodAutomaton.cpp.o: ../Automaton.h
@@ -101,10 +109,20 @@ CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.cpp
 CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.h
 CMakeFiles/cs236project.dir/QueriesAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/cs236project.dir/Relation.cpp.o: ../Header.h
+CMakeFiles/cs236project.dir/Relation.cpp.o: ../MyTuple.h
+CMakeFiles/cs236project.dir/Relation.cpp.o: ../Relation.cpp
+CMakeFiles/cs236project.dir/Relation.cpp.o: ../Relation.h
+
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Right_ParenAutomaton.cpp
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Right_ParenAutomaton.h
 CMakeFiles/cs236project.dir/Right_ParenAutomaton.cpp.o: ../Token.h
+
+CMakeFiles/cs236project.dir/Rule.cpp.o: ../Parameter.h
+CMakeFiles/cs236project.dir/Rule.cpp.o: ../Predicate.h
+CMakeFiles/cs236project.dir/Rule.cpp.o: ../Rule.cpp
+CMakeFiles/cs236project.dir/Rule.cpp.o: ../Rule.h
 
 CMakeFiles/cs236project.dir/RulesAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/RulesAutomaton.cpp.o: ../RulesAutomaton.cpp
@@ -130,6 +148,7 @@ CMakeFiles/cs236project.dir/main.cpp.o: ../Lexer.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Parameter.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Parser.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Predicate.h
+CMakeFiles/cs236project.dir/main.cpp.o: ../Rule.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Token.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../main.cpp
 

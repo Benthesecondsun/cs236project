@@ -369,6 +369,71 @@ CMakeFiles/cs236project.dir/Rule.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Rule.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.cpp -o CMakeFiles/cs236project.dir/Rule.cpp.s
 
+CMakeFiles/cs236project.dir/Header.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/Header.cpp.o: ../Header.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/cs236project.dir/Header.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/Header.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.cpp
+
+CMakeFiles/cs236project.dir/Header.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/Header.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.cpp > CMakeFiles/cs236project.dir/Header.cpp.i
+
+CMakeFiles/cs236project.dir/Header.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Header.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.cpp -o CMakeFiles/cs236project.dir/Header.cpp.s
+
+CMakeFiles/cs236project.dir/MyTuple.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/MyTuple.cpp.o: ../MyTuple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/cs236project.dir/MyTuple.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/MyTuple.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.cpp
+
+CMakeFiles/cs236project.dir/MyTuple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/MyTuple.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.cpp > CMakeFiles/cs236project.dir/MyTuple.cpp.i
+
+CMakeFiles/cs236project.dir/MyTuple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/MyTuple.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.cpp -o CMakeFiles/cs236project.dir/MyTuple.cpp.s
+
+CMakeFiles/cs236project.dir/Relation.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/Relation.cpp.o: ../Relation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/cs236project.dir/Relation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/Relation.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.cpp
+
+CMakeFiles/cs236project.dir/Relation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/Relation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.cpp > CMakeFiles/cs236project.dir/Relation.cpp.i
+
+CMakeFiles/cs236project.dir/Relation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Relation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.cpp -o CMakeFiles/cs236project.dir/Relation.cpp.s
+
+CMakeFiles/cs236project.dir/Database.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/Database.cpp.o: ../Database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/cs236project.dir/Database.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/Database.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Database.cpp
+
+CMakeFiles/cs236project.dir/Database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/Database.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Database.cpp > CMakeFiles/cs236project.dir/Database.cpp.i
+
+CMakeFiles/cs236project.dir/Database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Database.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Database.cpp -o CMakeFiles/cs236project.dir/Database.cpp.s
+
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: CMakeFiles/cs236project.dir/flags.make
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/cs236project.dir/Interpreter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cs236project.dir/Interpreter.cpp.o -c /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.cpp
+
+CMakeFiles/cs236project.dir/Interpreter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs236project.dir/Interpreter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.cpp > CMakeFiles/cs236project.dir/Interpreter.cpp.i
+
+CMakeFiles/cs236project.dir/Interpreter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs236project.dir/Interpreter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.cpp -o CMakeFiles/cs236project.dir/Interpreter.cpp.s
+
 # Object files for target cs236project
 cs236project_OBJECTS = \
 "CMakeFiles/cs236project.dir/ColonAutomaton.cpp.o" \
@@ -394,7 +459,12 @@ cs236project_OBJECTS = \
 "CMakeFiles/cs236project.dir/DatalogProgram.cpp.o" \
 "CMakeFiles/cs236project.dir/Predicate.cpp.o" \
 "CMakeFiles/cs236project.dir/Parameter.cpp.o" \
-"CMakeFiles/cs236project.dir/Rule.cpp.o"
+"CMakeFiles/cs236project.dir/Rule.cpp.o" \
+"CMakeFiles/cs236project.dir/Header.cpp.o" \
+"CMakeFiles/cs236project.dir/MyTuple.cpp.o" \
+"CMakeFiles/cs236project.dir/Relation.cpp.o" \
+"CMakeFiles/cs236project.dir/Database.cpp.o" \
+"CMakeFiles/cs236project.dir/Interpreter.cpp.o"
 
 # External object files for target cs236project
 cs236project_EXTERNAL_OBJECTS =
@@ -423,9 +493,14 @@ cs236project: CMakeFiles/cs236project.dir/DatalogProgram.cpp.o
 cs236project: CMakeFiles/cs236project.dir/Predicate.cpp.o
 cs236project: CMakeFiles/cs236project.dir/Parameter.cpp.o
 cs236project: CMakeFiles/cs236project.dir/Rule.cpp.o
+cs236project: CMakeFiles/cs236project.dir/Header.cpp.o
+cs236project: CMakeFiles/cs236project.dir/MyTuple.cpp.o
+cs236project: CMakeFiles/cs236project.dir/Relation.cpp.o
+cs236project: CMakeFiles/cs236project.dir/Database.cpp.o
+cs236project: CMakeFiles/cs236project.dir/Interpreter.cpp.o
 cs236project: CMakeFiles/cs236project.dir/build.make
 cs236project: CMakeFiles/cs236project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable cs236project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/cmake-build-debug-schizocsbyuedu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable cs236project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cs236project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

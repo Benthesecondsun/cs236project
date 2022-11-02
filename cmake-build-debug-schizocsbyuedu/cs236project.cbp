@@ -117,6 +117,12 @@
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/CommentAutomaton.h">
 			<Option target="cs236project"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Database.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Database.h">
+			<Option target="cs236project"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/DatalogProgram.cpp">
 			<Option target="cs236project"/>
 		</Unit>
@@ -129,10 +135,22 @@
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/FactsAutomaton.h">
 			<Option target="cs236project"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.h">
+			<Option target="cs236project"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/IdAutomaton.cpp">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/IdAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.h">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Left_ParenAutomaton.cpp">
@@ -151,6 +169,12 @@
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MultiplyAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.cpp">
@@ -187,6 +211,12 @@
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/QueriesAutomaton.h">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.cpp">
+			<Option target="cs236project"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.h">
 			<Option target="cs236project"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Right_ParenAutomaton.cpp">

@@ -6,21 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.h
 string
 -
 vector
 -
 
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.cpp
-Predicate.h
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.cpp
+MyTuple.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
 
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
-Parameter.h
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
 string
 -
 vector
+-
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.cpp
+Relation.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.h
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.h
+string
+-
+vector
+-
+Header.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.h
+MyTuple.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
+set
 -
 
