@@ -32,7 +32,7 @@ public:
     void findBody(Predicate* newPred, vector<Predicate*> newVec);
     void manyQueries();
     void manyTests();
-
+    DatalogProgram GetDatalogProgram() {return program;}
     string parserToString();
 
 };

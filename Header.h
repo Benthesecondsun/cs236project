@@ -10,6 +10,8 @@ private:
     vector<string> columnNames;
 
 public:
+    Header() = default;
+    ~Header() = default;
     void SetHeader(string newAttribute) {columnNames.push_back(newAttribute);}
     Header GetHeader(vector<int> newColumns) {
         Header newHeader;
@@ -19,6 +21,13 @@ public:
         return newHeader;
     }
 
+    bool operator==(const Header &rhs) const {
+        return columnNames == rhs.columnNames;
+    }
+
+    bool operator!=(const Header &rhs) const {
+        return !(rhs == *this);
+    }
 };
 
 

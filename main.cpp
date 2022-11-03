@@ -43,7 +43,10 @@ int main(int argc, char** argv) {
                                                                  --Run The Interpreter- \  / --
                                                                  ----------------------  \/  --
     */
-
+    Interpreter* myInterpreter = new Interpreter(myParser->GetDatalogProgram());
+    myInterpreter->InterpretSchemes();
+    myInterpreter->InterpretFacts();
+    myInterpreter->InterpretQueries();
 
     /*                                                           ---------------------- _||_ --
                                                                  --Clean Up All New---- \  / --
@@ -51,6 +54,7 @@ int main(int argc, char** argv) {
     */
     delete lexer;
     delete myParser;
+    delete myInterpreter;
 
     return 0;
 }

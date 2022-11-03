@@ -27,6 +27,7 @@ public:
     void addQuery(string inID, string inParams);
     string tostring();
     void setDomain(string in);
+    vector<Predicate*> GetSchemes() {return schemes;}
 };
 
 

@@ -16,7 +16,9 @@ public:
     ~Parameter();
     int numParams;
     string toString();
+    string singleToString(int index) {return eachParam.at(index);}
     void split(string in);
+    vector <string> GetStringParams() {return eachParam;}
 
 };
 
