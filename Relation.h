@@ -21,8 +21,12 @@ public:
         this->columnNames = columnNames;
     }
     string GetName() {return name;}
+    Header SetHeader(Header newHeader) { columnNames = newHeader;}
     void AddTuple(MyTuple newTuple) {tuples.insert(newTuple);}
-
+    Relation select1(int columnIndex, string value);
+    Relation select2(int columnIndex1, int columnIndex2);
+    Relation project(vector<int> columnsToProject);
+    Relation rename(vector<string> newColumnNames);
 
     string ToString();
 
