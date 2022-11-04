@@ -28,6 +28,8 @@ public:
     string tostring();
     void setDomain(string in);
     vector<Predicate*> GetSchemes() {return schemes;}
+    vector<Predicate*> GetFacts() {return facts;}
+    vector<Predicate*> GetQueries() {return queries;}
 };
 
 

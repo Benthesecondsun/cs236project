@@ -18,6 +18,18 @@ void Interpreter::InterpretSchemes(){
 }
 void Interpreter::InterpretFacts(){
 
+    Relation* relationPtr;
+    for (Predicate* facts:program.GetFacts()) {
+        for (Parameter* parameter: facts->getParams()) {
+            MyTuple tuple;
+            for (string string1:parameter->GetStringParams()) {
+                tuple.SetTuple(string1);
+            }
+            relationPtr = database.GetRelation(facts->getID());
+            relationPtr->AddTuple(tuple);
+        }
+
+    }
 }
 void Interpreter::InterpretQueries(){
 
