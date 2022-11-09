@@ -15,7 +15,7 @@ public:
     void SetHeader(string newAttribute) {columnNames.push_back(newAttribute);}
     Header GetNewHeader(vector<int> newColumns) {
         Header newHeader;
-        for (int i = 0; i < newColumns.size(); ++i) {
+        for (unsigned int i = 0; i < newColumns.size(); ++i) {
             newHeader.SetHeader(columnNames.at(newColumns.at(i)));
         }
         return newHeader;

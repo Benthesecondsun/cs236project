@@ -51,7 +51,7 @@ Relation Relation::project(vector<int> columnsToProject) {
     }
     // setting newrelation header to newrelation's tuples
     newRelation.SetNewHeader(newHeader);
-    for (int i = 0; i < newTuples.size(); ++i) {
+    for (unsigned int i = 0; i < newTuples.size(); ++i) {
         newRelation.AddTuple(newTuples.at(i));
     }
     return newRelation;
@@ -62,7 +62,7 @@ Relation Relation::rename(vector<string> newColumnNames) {
     newRelation.tuples = this->tuples;
     newRelation.columnNames = this->columnNames;
     Header newHeader;
-    for (int i = 0; i < newColumnNames.size(); ++i) {
+    for (unsigned int i = 0; i < newColumnNames.size(); ++i) {
         newHeader.SetHeader(newColumnNames.at(i));
     }
     newRelation.SetNewHeader(newHeader);
