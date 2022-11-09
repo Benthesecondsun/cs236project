@@ -19,7 +19,7 @@ public:
     string singleToString(int index) {return eachParam.at(index);}
     void split(string in);
     vector <string> GetStringParams() {return eachParam;}
-
+    bool GetConstant(int index) { if (eachParam.at(index).at(0) == '\'') {return true;}else {return false;}}
 };
 
 

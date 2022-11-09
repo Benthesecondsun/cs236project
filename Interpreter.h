@@ -2,6 +2,8 @@
 #define CS236PROJECT_INTERPRETER_H
 #include "Database.h"
 #include "DatalogProgram.h"
+#include <iostream>
+
 using namespace std;
 
 class Interpreter {

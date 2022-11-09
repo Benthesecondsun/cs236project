@@ -35,8 +35,8 @@ int main(int argc, char** argv) {
     string interpreterInput; // use this to get the parser's data to the interpreter.
     try {
         myParser->checkSyntax();
-        cout << "Success!" << "\n";
-        cout << myParser->parserToString();
+        //cout << "Success!" << "\n";
+        //cout << myParser->parserToString();
     }
     catch(string e) {cout << "Failure!\n" << "  " << e << "\n";}
     /*                                                           ---------------------- _||_ --
@@ -47,7 +47,6 @@ int main(int argc, char** argv) {
     myInterpreter->InterpretSchemes();
     myInterpreter->InterpretFacts();
     myInterpreter->InterpretQueries();
-
     /*                                                           ---------------------- _||_ --
                                                                  --Clean Up All New---- \  / --
                                                                  ----------------------  \/  --

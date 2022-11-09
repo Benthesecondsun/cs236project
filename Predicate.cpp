@@ -44,6 +44,6 @@ string Predicate::toString() {
         outString += params.at(i)->toString();
         if (i != params.size() - 1) {outString += ", ";}
     }
-    outString += ")";
+    outString += ")?";
     return outString;
 }

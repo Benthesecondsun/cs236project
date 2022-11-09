@@ -13,14 +13,15 @@ public:
     Header() = default;
     ~Header() = default;
     void SetHeader(string newAttribute) {columnNames.push_back(newAttribute);}
-    Header GetHeader(vector<int> newColumns) {
+    Header GetNewHeader(vector<int> newColumns) {
         Header newHeader;
         for (int i = 0; i < newColumns.size(); ++i) {
             newHeader.SetHeader(columnNames.at(newColumns.at(i)));
         }
         return newHeader;
     }
-
+    string GetHeader(int index) {return columnNames.at(index);}
+    bool isEmpty() {return columnNames.empty();}
     bool operator==(const Header &rhs) const {
         return columnNames == rhs.columnNames;
     }
@@ -28,6 +29,7 @@ public:
     bool operator!=(const Header &rhs) const {
         return !(rhs == *this);
     }
+
 };
 
 
