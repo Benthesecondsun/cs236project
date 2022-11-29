@@ -68,3 +68,66 @@ Relation Relation::rename(vector<string> newColumnNames) {
     newRelation.SetNewHeader(newHeader);
     return newRelation;
 }
+
+Relation Relation::join(Relation relationToJoinWith) {
+    Relation newRelation;
+    newRelation.SetNewHeader(this->columnNames);
+    for (string strings: relationToJoinWith.columnNames.RetrieveHeader()) {
+        newRelation.columnNames.SetHeader(strings);
+    }
+    // Just completed adding the headers together
+    vector<MyTuple> headersToCombine;
+    vector<int> avoidTheseBetaColumns;
+    int alphaIndex,betaIndex = 0;
+    for (string alphaHeaders:this->columnNames.RetrieveHeader()) {
+        for (string betaHeaders:relationToJoinWith.columnNames.RetrieveHeader()) {
+            MyTuple newTuple;
+            if (alphaHeaders == betaHeaders) {
+                newTuple.SetTuple(to_string(alphaIndex));
+                newTuple.SetTuple(to_string(betaIndex));
+                headersToCombine.push_back(newTuple);
+                avoidTheseBetaColumns.push_back(betaIndex);
+                break;
+            }
+        }
+    }
+    if (!headersToCombine.empty()) { //code to combine tuples
+        for (MyTuple alphaTuples:this->tuples) {
+            for (MyTuple betaTuples:relationToJoinWith.tuples) {
+                int matchedHeaders = 0;
+                for (MyTuple headerTuples:headersToCombine) {
+                    if (alphaTuples.CheckTuple(stoi(headerTuples.CheckTuple(0))) == betaTuples.CheckTuple(stoi(headerTuples.CheckTuple(1)))) {++matchedHeaders;}
+
+                }
+                if (matchedHeaders == headersToCombine.size()) {
+                    MyTuple newTuple = alphaTuples;
+                    bool avoid = false;
+                    for (unsigned int i; i < betaTuples.getRowValues().size(); i++) {
+                        for (int avoidNums:avoidTheseBetaColumns) {
+                            if (i == avoidNums) {avoid = true;}
+                        }
+                        if (avoid == false) {
+                            newTuple.SetTuple(betaTuples.getRowValues().at(i));
+                        }
+                        avoid = false;
+                    }
+                    newRelation.AddTuple(newTuple);
+                }
+            }
+        }
+    }
+    else {
+        MyTuple newTuple;
+        for (MyTuple alphaTuples:this->tuples) {
+            newTuple = alphaTuples;
+            for (MyTuple betaTuples:relationToJoinWith.tuples) {
+                int i = 0;
+                newTuple.SetTuple(betaTuples.CheckTuple(i));
+                ++i;
+            }
+            newRelation.AddTuple(newTuple);
+        }
+
+    }
+    return Relation();
+}

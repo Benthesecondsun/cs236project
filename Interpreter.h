@@ -18,7 +18,7 @@ public:
     void InterpretSchemes();
     void InterpretFacts();
     void InterpretQueries();
-
+    void InterpretRules();
 
 
 

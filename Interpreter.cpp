@@ -32,6 +32,14 @@ void Interpreter::InterpretFacts(){
 
     }
 }
+
+void Interpreter::InterpretRules() { // CHANGE ME
+    Relation* relationPtr;
+    for (Rule* rules:program.GetRules()) {
+
+
+    }
+}
 void Interpreter::InterpretQueries(){
     Relation* relationPtr;
     string outString;

@@ -30,6 +30,7 @@ public:
     vector<Predicate*> GetSchemes() {return schemes;}
     vector<Predicate*> GetFacts() {return facts;}
     vector<Predicate*> GetQueries() {return queries;}
+    vector<Rule*> GetRules() {return rules;}
 };
 
 

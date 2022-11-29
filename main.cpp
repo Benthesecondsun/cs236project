@@ -46,6 +46,7 @@ int main(int argc, char** argv) {
     Interpreter* myInterpreter = new Interpreter(myParser->GetDatalogProgram());
     myInterpreter->InterpretSchemes();
     myInterpreter->InterpretFacts();
+    myInterpreter->InterpretRules();
     myInterpreter->InterpretQueries();
     /*                                                           ---------------------- _||_ --
                                                                  --Clean Up All New---- \  / --

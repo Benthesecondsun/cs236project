@@ -18,7 +18,7 @@ public:
     bool operator<=(const MyTuple &rhs) const;
 
     bool operator>=(const MyTuple &rhs) const;
-
+    vector<string> getRowValues() {return rowValues;}
     string CheckTuple(int column) {return rowValues.at(column);}
     void SetTuple(string newAttribute) {rowValues.push_back(newAttribute); numTupleElements++;}
     string ToString(int index) {

@@ -29,11 +29,12 @@ public:
     Relation select2(int columnIndex1, int columnIndex2);
     Relation project(vector<int> columnsToProject);
     Relation rename(vector<string> newColumnNames);
+    Relation join(Relation relationToJoinWith);
     void SetName(string name) {this->name = name;}
     string ToString();
     bool IsEmpty() { return tuples.empty();}
     Header GetHeader() {return columnNames;}
-
+    //void addOntoHeader(string inString) {columnNames.SetHeader(string);}
 
 
 

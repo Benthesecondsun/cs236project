@@ -12,7 +12,7 @@ private:
 public:
     Header() = default;
     ~Header() = default;
-    void SetHeader(string newAttribute) {columnNames.push_back(newAttribute);}
+    void SetHeader(string newAttribute);
     Header GetNewHeader(vector<int> newColumns) {
         Header newHeader;
         for (unsigned int i = 0; i < newColumns.size(); ++i) {
@@ -29,7 +29,7 @@ public:
     bool operator!=(const Header &rhs) const {
         return !(rhs == *this);
     }
-
+    vector<string> RetrieveHeader() {return columnNames;}
 };
 
 
