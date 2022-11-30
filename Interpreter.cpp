@@ -75,7 +75,7 @@ void Interpreter::InterpretRules() { // CHANGE ME
                     //outString += "Yes(" + to_string(tempRelation.GetNumTuples()) + ")\n";
                     Header newHeader;
                     if (!seenVariables.empty()) {
-                        for (int i = 0; i < seenVariables.size(); ++i) {
+                        for (unsigned int i = 0; i < seenVariables.size(); ++i) {
                             newHeader.SetHeader(seenVariables.at(i));
                         }
                         tempRelation.SetNewHeader(newHeader);

@@ -98,7 +98,7 @@ Relation Relation::join(Relation relationToJoinWith) {
     if (!headersToCombine.empty()) { //code to combine tuples
         for (MyTuple alphaTuples:this->tuples) {
             for (MyTuple betaTuples:relationToJoinWith.tuples) {
-                int matchedHeaders = 0;
+                unsigned int matchedHeaders = 0;
                 for (MyTuple headerTuples:headersToCombine) {
                     if (alphaTuples.CheckTuple(stoi(headerTuples.CheckTuple(0))) == betaTuples.CheckTuple(stoi(headerTuples.CheckTuple(1)))) {++matchedHeaders;}
                 }
@@ -106,7 +106,7 @@ Relation Relation::join(Relation relationToJoinWith) {
                     MyTuple newTuple = alphaTuples;
                     bool avoid = false;
                     for (unsigned int i = 0; i < betaTuples.getRowValues().size(); i++) {
-                        for (int avoidNums:avoidTheseBetaColumns) {
+                        for (unsigned int avoidNums:avoidTheseBetaColumns) {
                             if (i == avoidNums) {avoid = true;}
                         }
                         if (avoid == false) {
