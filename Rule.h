@@ -13,6 +13,8 @@ public:
     Rule(Predicate* header, vector<Predicate*> theBody);
     ~Rule() {}
     string toString();
+    vector<Predicate*> GetBody() {return body;}
+    Predicate* GetHead() {return head;}
 };
 
 

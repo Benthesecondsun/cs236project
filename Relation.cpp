@@ -78,8 +78,9 @@ Relation Relation::join(Relation relationToJoinWith) {
     // Just completed adding the headers together
     vector<MyTuple> headersToCombine;
     vector<int> avoidTheseBetaColumns;
-    int alphaIndex,betaIndex = 0;
+    int alphaIndex = 0;
     for (string alphaHeaders:this->columnNames.RetrieveHeader()) {
+        int betaIndex = 0;
         for (string betaHeaders:relationToJoinWith.columnNames.RetrieveHeader()) {
             MyTuple newTuple;
             if (alphaHeaders == betaHeaders) {
@@ -88,8 +89,11 @@ Relation Relation::join(Relation relationToJoinWith) {
                 headersToCombine.push_back(newTuple);
                 avoidTheseBetaColumns.push_back(betaIndex);
                 break;
+            }else {
+                betaIndex++;
             }
         }
+        alphaIndex++;
     }
     if (!headersToCombine.empty()) { //code to combine tuples
         for (MyTuple alphaTuples:this->tuples) {
@@ -97,12 +101,11 @@ Relation Relation::join(Relation relationToJoinWith) {
                 int matchedHeaders = 0;
                 for (MyTuple headerTuples:headersToCombine) {
                     if (alphaTuples.CheckTuple(stoi(headerTuples.CheckTuple(0))) == betaTuples.CheckTuple(stoi(headerTuples.CheckTuple(1)))) {++matchedHeaders;}
-
                 }
                 if (matchedHeaders == headersToCombine.size()) {
                     MyTuple newTuple = alphaTuples;
                     bool avoid = false;
-                    for (unsigned int i; i < betaTuples.getRowValues().size(); i++) {
+                    for (unsigned int i = 0; i < betaTuples.getRowValues().size(); i++) {
                         for (int avoidNums:avoidTheseBetaColumns) {
                             if (i == avoidNums) {avoid = true;}
                         }
@@ -129,5 +132,15 @@ Relation Relation::join(Relation relationToJoinWith) {
         }
 
     }
-    return Relation();
+    return newRelation;
+}
+
+Relation Relation::myUnion(Relation relationToUnionWith) {
+    Relation newRelation;
+    for (MyTuple newTuple:relationToUnionWith.tuples) {
+        this->tuples.insert(newTuple);
+    }
+
+
+    return newRelation;
 }

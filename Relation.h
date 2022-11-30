@@ -30,6 +30,7 @@ public:
     Relation project(vector<int> columnsToProject);
     Relation rename(vector<string> newColumnNames);
     Relation join(Relation relationToJoinWith);
+    Relation myUnion(Relation relationToUnionWith);
     void SetName(string name) {this->name = name;}
     string ToString();
     bool IsEmpty() { return tuples.empty();}
