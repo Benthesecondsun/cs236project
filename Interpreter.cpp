@@ -35,7 +35,8 @@ void Interpreter::InterpretFacts(){
 
 void Interpreter::InterpretRules() { // CHANGE ME
     Relation* relationPtr;
-
+    int preRulesNumTuples = 0;
+    preRulesNumTuples = database.TotalTuples();
     //string outString;
     for (Rule* rules:program.GetRules()) { // INSIDE RULES
         Relation finalRelation;
@@ -127,15 +128,23 @@ void Interpreter::InterpretRules() { // CHANGE ME
         finalRelation.SetName(rules->GetHead()->getID());
         relationPtr = database.GetRelation(finalRelation.GetName());
         finalRelation = finalRelation.rename(relationPtr->GetHeader().RetrieveHeader());
+        cout << rules->toString() + ".\n";
         relationPtr->myUnion(finalRelation);
+        //run database tuple counter.
     }
-    //t
+
+    int postRulesNumTuples = 0;
+    postRulesNumTuples = database.TotalTuples();
+    if (postRulesNumTuples != preRulesNumTuples) {InterpretRules(); ++numPasses;} // Rerun till total tuples doesnt change
+
 }
+
 void Interpreter::InterpretQueries(){
     Relation* relationPtr;
     string outString;
+    outString += "\nQuery Evaluation\n";
     for (Predicate* query:program.GetQueries()) { // for every Predicate* in the queries vector
-        outString += query->toString() + " ";
+        outString += query->toString() + "? ";
         relationPtr = database.GetRelation(query->getID());
         for (Parameter* parameter: query->getParams()) { // for every parameter in the params vector
             vector <string> seenVariables;

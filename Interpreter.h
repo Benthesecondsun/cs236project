@@ -12,6 +12,7 @@ private:
     Database database;
 
 public:
+    int numPasses = 1;
     Interpreter() = default;
     ~Interpreter() = default;
     Interpreter(DatalogProgram program) {this->program = program;}

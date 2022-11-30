@@ -12,7 +12,7 @@ public:
     void AddRelation(Relation NewRelation);
     Relation* GetRelation(string relationName);
     Relation GetRelationCopy(string relationName);
-
+    int TotalTuples();
 };
 
 

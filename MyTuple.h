@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -28,6 +29,7 @@ public:
     string ToString(int index) {
         return rowValues.at(index);
     }
+    string ToString();
     int size() {return numTupleElements;}
 };
 

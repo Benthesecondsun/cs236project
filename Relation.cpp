@@ -120,15 +120,21 @@ Relation Relation::join(Relation relationToJoinWith) {
         }
     }
     else {
+        vector<MyTuple> newTuples;
         MyTuple newTuple;
         for (MyTuple alphaTuples:this->tuples) {
             newTuple = alphaTuples;
             for (MyTuple betaTuples:relationToJoinWith.tuples) {
-                int i = 0;
-                newTuple.SetTuple(betaTuples.CheckTuple(i));
-                ++i;
+                for (int j = 0; j < betaTuples.size(); ++j) {
+                    newTuple.SetTuple(betaTuples.CheckTuple(j));
+                }
+                newTuples.push_back(newTuple);
+                newTuple = alphaTuples;
             }
-            newRelation.AddTuple(newTuple);
+            for (MyTuple tuplesToAdd:newTuples) {
+                newRelation.AddTuple(tuplesToAdd);
+            }
+
         }
 
     }
@@ -137,10 +143,19 @@ Relation Relation::join(Relation relationToJoinWith) {
 
 Relation Relation::myUnion(Relation relationToUnionWith) {
     Relation newRelation;
+    string outString;
     for (MyTuple newTuple:relationToUnionWith.tuples) {
-        this->tuples.insert(newTuple);
+        if(this->tuples.insert(newTuple).second) {
+            numTuples++;
+            outString += "  ";
+            for (int i = 0; i < newTuple.size(); ++i) {
+                outString += columnNames.GetHeader(i) + "=" + newTuple.ToString(i);
+                if (i != newTuple.size() - 1) { outString += ", "; }
+            }
+            outString += "\n";
+        }
     }
-
+    cout << outString;
 
     return newRelation;
 }

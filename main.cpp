@@ -46,7 +46,9 @@ int main(int argc, char** argv) {
     Interpreter* myInterpreter = new Interpreter(myParser->GetDatalogProgram());
     myInterpreter->InterpretSchemes();
     myInterpreter->InterpretFacts();
+    cout << "Rule Evaluation\n";
     myInterpreter->InterpretRules();
+    cout << "\nSchemes populated after " << to_string(myInterpreter->numPasses) << " passes through the Rules.\n";
     myInterpreter->InterpretQueries();
     /*                                                           ---------------------- _||_ --
                                                                  --Clean Up All New---- \  / --
