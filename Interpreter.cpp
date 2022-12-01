@@ -54,6 +54,7 @@ void Interpreter::InterpretRules() { // CHANGE ME
                     if (string1.at(0) == '\'') { // do select 1
                         tempRelation = relationPtr->select1(indexNumber, string1);
                         relationPtr = &tempRelation;
+                        seenVariables.push_back(string1);
                     }
                     else {  // this means it is a variable
                         if (seenVariables.empty()) {seenVariables.push_back(string1);indexOfSeenVariables.push_back(indexNumber);}

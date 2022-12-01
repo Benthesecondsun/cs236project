@@ -59,8 +59,7 @@ Facts:
 
 Rules:
    before(C1,C2):-cp(C2,C1).
-   before(C1,C2):-cp(C3,C1),before(C3,C2).
-   mwfCourses(C,R):-cdh(C,'M',H),cr(C,R).
+   before(C1,C2):-cp(C3,C1),before(C3,C2).mwfCourses(C,R):-cdh(C,'M',H),cr(C,R).
    mwfCourses(C,R):-cdh(C,'W',H),cr(C,R).
    mwfCourses(C,R):-cdh(C,'F',H),cr(C,R).
    Schedule(N,C,R,D,H):-snap(S,N,A,P),csg(C,S,G),cr(C,R),cdh(C,D,H).
