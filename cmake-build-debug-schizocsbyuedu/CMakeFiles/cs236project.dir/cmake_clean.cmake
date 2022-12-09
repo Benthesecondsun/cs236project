@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cs236project.dir/Database.cpp.o"
   "CMakeFiles/cs236project.dir/DatalogProgram.cpp.o"
   "CMakeFiles/cs236project.dir/FactsAutomaton.cpp.o"
+  "CMakeFiles/cs236project.dir/Graph.cpp.o"
   "CMakeFiles/cs236project.dir/Header.cpp.o"
   "CMakeFiles/cs236project.dir/IdAutomaton.cpp.o"
   "CMakeFiles/cs236project.dir/Interpreter.cpp.o"
@@ -28,6 +29,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cs236project.dir/StringAutomaton.cpp.o"
   "CMakeFiles/cs236project.dir/Token.cpp.o"
   "CMakeFiles/cs236project.dir/main.cpp.o"
+  "CMakeFiles/cs236project.dir/node.cpp.o"
   "cs236project"
   "cs236project.pdb"
 )

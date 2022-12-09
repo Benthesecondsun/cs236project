@@ -3,6 +3,7 @@
 #include "Database.h"
 #include "DatalogProgram.h"
 #include <iostream>
+#include "Graph.h"
 
 using namespace std;
 
@@ -10,7 +11,7 @@ class Interpreter {
 private:
     DatalogProgram program;
     Database database;
-
+    vector <string> allPossibleRuleIDs;
 public:
     int numPasses = 1;
     Interpreter() = default;

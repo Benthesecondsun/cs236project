@@ -339,6 +339,33 @@ FactsAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/FactsAutomaton.cpp.s
 .PHONY : FactsAutomaton.cpp.s
 
+Graph.o: Graph.cpp.o
+
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 Header.o: Header.cpp.o
 
 .PHONY : Header.o
@@ -906,6 +933,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+node.o: node.cpp.o
+
+.PHONY : node.o
+
+# target to build an object file
+node.cpp.o:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/node.cpp.o
+.PHONY : node.cpp.o
+
+node.i: node.cpp.i
+
+.PHONY : node.i
+
+# target to preprocess a source file
+node.cpp.i:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/node.cpp.i
+.PHONY : node.cpp.i
+
+node.s: node.cpp.s
+
+.PHONY : node.s
+
+# target to generate assembly for a file
+node.cpp.s:
+	$(MAKE) -f CMakeFiles/cs236project.dir/build.make CMakeFiles/cs236project.dir/node.cpp.s
+.PHONY : node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -939,6 +993,9 @@ help:
 	@echo "... FactsAutomaton.o"
 	@echo "... FactsAutomaton.i"
 	@echo "... FactsAutomaton.s"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... Header.o"
 	@echo "... Header.i"
 	@echo "... Header.s"
@@ -1002,6 +1059,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... node.o"
+	@echo "... node.i"
+	@echo "... node.s"
 .PHONY : help
 
 

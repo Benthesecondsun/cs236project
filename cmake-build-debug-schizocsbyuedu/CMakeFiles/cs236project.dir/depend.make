@@ -26,6 +26,12 @@ CMakeFiles/cs236project.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.cpp
 CMakeFiles/cs236project.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.h
 CMakeFiles/cs236project.dir/CommentAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/cs236project.dir/Database.cpp.o: ../Database.cpp
+CMakeFiles/cs236project.dir/Database.cpp.o: ../Database.h
+CMakeFiles/cs236project.dir/Database.cpp.o: ../Header.h
+CMakeFiles/cs236project.dir/Database.cpp.o: ../MyTuple.h
+CMakeFiles/cs236project.dir/Database.cpp.o: ../Relation.h
+
 CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
 CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../DatalogProgram.h
 CMakeFiles/cs236project.dir/DatalogProgram.cpp.o: ../Parameter.h
@@ -44,6 +50,17 @@ CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../IdAutomaton.cpp
 CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../IdAutomaton.h
 CMakeFiles/cs236project.dir/IdAutomaton.cpp.o: ../Token.h
+
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Database.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../DatalogProgram.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Header.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Interpreter.cpp
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Interpreter.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../MyTuple.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Parameter.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Predicate.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Relation.h
+CMakeFiles/cs236project.dir/Interpreter.cpp.o: ../Rule.h
 
 CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/cs236project.dir/Left_ParenAutomaton.cpp.o: ../Left_ParenAutomaton.cpp
@@ -143,11 +160,16 @@ CMakeFiles/cs236project.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/cs236project.dir/Token.cpp.o: ../Token.h
 
 CMakeFiles/cs236project.dir/main.cpp.o: ../Automaton.h
+CMakeFiles/cs236project.dir/main.cpp.o: ../Database.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../DatalogProgram.h
+CMakeFiles/cs236project.dir/main.cpp.o: ../Header.h
+CMakeFiles/cs236project.dir/main.cpp.o: ../Interpreter.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Lexer.h
+CMakeFiles/cs236project.dir/main.cpp.o: ../MyTuple.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Parameter.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Parser.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Predicate.h
+CMakeFiles/cs236project.dir/main.cpp.o: ../Relation.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Rule.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../Token.h
 CMakeFiles/cs236project.dir/main.cpp.o: ../main.cpp

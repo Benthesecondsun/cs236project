@@ -5,7 +5,7 @@ void Interpreter::InterpretSchemes(){
 
     for (Predicate* scheme:program.GetSchemes()) {
         newRelation.SetName(scheme->getID());
-
+        allPossibleRuleIDs.push_back(scheme->getID());
         for (Parameter* parameter: scheme->getParams()) {
             Header newHeader;
             for (string string1:parameter->GetStringParams()) {
@@ -35,10 +35,20 @@ void Interpreter::InterpretFacts(){
 
 void Interpreter::InterpretRules() { // CHANGE ME
     Relation* relationPtr;
-    int preRulesNumTuples = 0;
-    preRulesNumTuples = database.TotalTuples();
+    //int preRulesNumTuples = 0;
+
+    vector<string> seenRules;
+    Graph myGraph;
+    myGraph.SetRules(program.GetRules());
+    myGraph.SetNodesLeftID(allPossibleRuleIDs);
+    myGraph.CreateRulesAsNodes();
+    myGraph.CreateAdjacencyList();
+    myGraph.CreateReverseList();
+
+
+    //preRulesNumTuples = database.TotalTuples();
     //string outString;
-    for (Rule* rules:program.GetRules()) { // INSIDE RULES
+    for (Rule* rules:program.GetRules()) { // INSIDE RULES // this is where i find each individual node.
         Relation finalRelation;
         int isFirstBodyPred = 0;
         for (Predicate* bodyPredicates:rules->GetBody()) { // for every Predicate* in the queries vector
@@ -134,10 +144,11 @@ void Interpreter::InterpretRules() { // CHANGE ME
         //run database tuple counter.
     }
 
-    int postRulesNumTuples = 0;
+    // Reruns it if tuples were changed.
+    /*int postRulesNumTuples = 0;
     postRulesNumTuples = database.TotalTuples();
     if (postRulesNumTuples != preRulesNumTuples) {InterpretRules(); ++numPasses;} // Rerun till total tuples doesnt change
-
+    */
 }
 
 void Interpreter::InterpretQueries(){
@@ -198,3 +209,8 @@ void Interpreter::InterpretQueries(){
 
     }
 }
+struct {
+    string nodeHead;
+    vector<string> connectedNodes;
+
+} MyNode;

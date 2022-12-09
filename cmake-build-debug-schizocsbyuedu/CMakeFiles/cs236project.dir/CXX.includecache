@@ -6,25 +6,65 @@
 
 #IncludeRegexTransform: 
 
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Database.h
+Relation.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.h
+map
+-
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/DatalogProgram.h
+Predicate.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+Rule.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.h
+vector
+-
+set
+-
+
 /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Header.h
 string
 -
 vector
 -
 
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.cpp
-MyTuple.h
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.cpp
+Interpreter.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.h
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Interpreter.h
+Database.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Database.h
+DatalogProgram.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/DatalogProgram.h
+iostream
+-
 
 /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
 string
 -
 vector
 -
+iostream
+-
 
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.cpp
-Relation.h
-/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
+string
+-
+vector
+-
+algorithm
+-
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
+Parameter.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Parameter.h
+string
+-
+vector
+-
+set
+-
 
 /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Relation.h
 string
@@ -37,4 +77,12 @@ MyTuple.h
 /users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/MyTuple.h
 set
 -
+
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Rule.h
+string
+-
+vector
+-
+Predicate.h
+/users/guest/b/bgm98/CLionRemote/tmp/tmp.rnh0R2ZODX/Predicate.h
 
